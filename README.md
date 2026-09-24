@@ -1,13 +1,20 @@
-# Tic-Tac-Toe
+# Hearth & Harvest
 
-A browser-based Tic-Tac-Toe game built with HTML, CSS, and JavaScript ES modules.
+A restaurant homepage built with JavaScript modules and bundled with Webpack. The Home, Menu, and Contact tabs are generated and switched entirely with JavaScript.
 
-## Run locally
-
-Because the browser blocks ES modules opened directly from `file://`, serve the project with a local web server. For example, use VS Code Live Server/Live Preview or run:
+## Development
 
 ```bash
-npx serve .
+npm install
+npx webpack serve
 ```
 
-Open the displayed local URL, enter player names, and start the game.
+Then open [http://localhost:8080](http://localhost:8080).
+
+## Production build
+
+```bash
+npx webpack
+```
+
+The production files are written to `dist/`.
